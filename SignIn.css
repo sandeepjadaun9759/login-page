@@ -1,0 +1,113 @@
+/* Full page background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #36845b; /* Blue background */
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Sign-in container */
+.signin-page {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 25px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  color: #333;
+  text-align: center; /* Heading center only */
+  height: auto;
+}
+
+/* Heading */
+.signin-page h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #36845b;
+  letter-spacing: 1px;
+}
+
+/* Labels */
+.signin-page label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.signin-page input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 6px; /* thoda kam space for error message */
+  background: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.signin-page input:focus {
+  border: 2px solid #36845b;
+  box-shadow: 0 0 6px rgba(54, 132, 91, 0.3);
+}
+
+/* Button */
+.signin-page button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #36845b, #ffba4f);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 12px;
+}
+
+.signin-page button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 13px;      /* chhota font */
+  text-align: left;     /* left align */
+  margin: 4px 0 12px;   /* thoda spacing */
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signin-page {
+    padding: 25px 20px;
+  }
+  .signin-page h1 {
+    font-size: 22px;
+  }
+  .signin-page input {
+    font-size: 13px;
+  }
+  .signin-page button {
+    font-size: 15px;
+  }
+  .error {
+    font-size: 12px;
+  }
+}
